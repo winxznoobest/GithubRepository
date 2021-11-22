@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family: sans-serif;
+                margin-top: 40px;
+            }
+            .head{
+                width: 540px;
+                background-color: rgb(0,0,0,0.6);
+                margin: auto;
+                color: #FFFFFF;
+                padding: 10px 0px 10px 0px;
+                text-align: center;
+                border-radius: 15px 15px 0px 0px;
+            }
+            .body{
+                width: 380px;
+                height: 915px;
+                margin: auto;
+                margin: 10 0 0 10px;
+                padding: 15px 80px 0px 80px;
+                background: rgb(0, 0, 0, 0.5);                    border-radius: 0px 0px 15px 15px;
+            }
+            label{
+                color: white;
+                font-size: 20px;
+            }
+            #firstname{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px; 
+            }
+            #middlename{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px; 
+            }
+            #lastname{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px; 
+            }
+            #email{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px; 
+            }
+            #homeaddress{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px; 
+            }
+            #ssays{
+                width: 350px;  
+                height: 100px;  
+                border: none;  
+                border-radius: 6px;  
+                padding-left: 8px;
+            }
+            .option{
+                position: relative;
+                left: 25px;
+                top: -0px;
+                line-height: 40px;
+                width: 340px;
+                border-radius: 6px;
+                padding: 0 22px;
+                font-size: 16px;
+                color: #555;
+                outline: none;
+                overflow: hidden;
+            }
+            .option option{
+                font-size: 10px;
+            }
+            #register{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 17px;  
+                padding-left: 7px;  
+                color: rgb(0, 0, 0, 0.6);
+            }
+            #clear{
+                width: 350px;  
+                height: 30px;  
+                border: none;  
+                border-radius: 17px;  
+                padding-left: 7px;  
+                color: rgb(0, 0, 0, 0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head"><h1>Registration</h1></div>
+        <div class="body">
+            <form id="body">
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name">
+                <br><br>
+
+                <label for="middlename"><b>Middle Name</b></label>
+                <input type="text" name="middlename" id="middlename" placeholder="Middle Name">
+                <br><br>
+
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                <br><br>
+
+                <label for="gender"><b>Gender</b></label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="html">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="css">Female</label><br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email" id="email" placeholder="example@exp.com">
+                <br><br>
+
+                <label for="homeaddress"><b>Home Address</b></label>
+                <textarea id="homeaddress" name="homeaddress" placeholder="Home Address" rows="1" cols="50"></textarea>
+                <br><br>
+
+                <label for="hobbies"><b>Hobbies</b></label><br>
+                <input type="checkbox" id="computer" name="computer" value="computer">
+                <label for="computer"> Computer Games</label><br>
+                <input type="checkbox" id="instrument" name="instrument" value="instrument">
+                <label for="instrument"> Playing Music Instrument</label><br>
+                <input type="checkbox" id="cooking" name="cooking" value="cooking">
+                <label for="cooking"> Cooking</label><br>
+                <input type="checkbox" id="drawing" name="drawing" value="drawing">
+                <label for="drawing"> Drawing</label><br><br>
+
+                <label for="color"><b>Favorite Color</b></label>
+                <select class="option" name="color">
+                    <option disabled="disabled" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --- Choose Option ---</option>
+                    <option>Red</option>
+                    <option>Yellow</option>
+                    <option>Blue</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Orange</option>
+                    <option>Pink</option>
+                    <option>Green</option>
+                    <option>Violet</option>
+                    <option>Purple</option>
+                    <option>Gray</option>
+                    <option>Brown</option>
+                </select><br><br>
+
+                <label for="ssays"><b>Say Something About Yourself</b></label>
+                <textarea id="ssays" name="ssays" placeholder="say something about yorself" rows="5" cols="50"></textarea>
+                <br><br><br><br>
+
+                <input type="button" onclick="alert('Registered Successfully.')" name="register" id="register" value="Register">    
+                <br><br>
+                <input type="reset" onclick="alert('The Registration Page has been Cleared.')" name="clear" id="clear" value="Clear">
+            </form>
+        </div>
+    </body>
+</html>
